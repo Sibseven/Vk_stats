@@ -12,7 +12,7 @@ root.config(menu=main_menu)
 
 class Search_main():
     def __init__(self):
-        self.TOKEN  =  "8c3c49e78c3c49e78c3c49e7858c48f07788c3c8c3c49e7d39d004c7ba1090c4d55fe13"
+        self.TOKEN  =  "blank"
         self.vk_session  =  vk_api.VkApi(app_id = 7649680, token=self.TOKEN)
         self.vk  =  self.vk_session.get_api()
         self.spliter  =  ','
@@ -366,3 +366,4 @@ main_menu.add_command(label='Clear Filter',command=Clear_filter)
 main_menu.add_command(label='Search',command= Search_button)
 
 root.mainloop()
+
